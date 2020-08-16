@@ -1,0 +1,912 @@
+body {
+  margin: auto;
+}
+
+.morning-mode {
+  background-color: #fff;
+}
+
+.night-mode {
+  background-color: black;
+}
+
+.surrounding {
+  position: relative;
+}
+
+.sun {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: gold;
+  border-radius: 50%;
+  border: none;
+  top: 0;
+  transform: translate(800px, 19px);
+  margin-top: 2%;
+}
+
+.moon {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: none;
+  top: 0;
+  transform: translate(800px, 19px);
+  margin-top: 2%;
+}
+
+p {
+  font-size: 30px;
+}
+
+.building-top {
+  /* position: absolute; */
+  transform: translate(255px, 252px);
+  position: absolute;
+  display: flex;
+  width: 10%;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  margin: auto;
+  border-left: 300px solid transparent;
+  border-right: 300px solid transparent;
+  border-bottom: 110px solid #dd7e6b;
+}
+
+.building-wall {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+  width: 600px;
+  background-color: #cccccc;
+  margin: auto;
+  transform: translate(255px, 416px);
+}
+
+.signboard {
+  transform: translate(189px, -22px);
+  background-color: mediumspringgreen;
+  width: 250px;
+  border: 4px solid green;
+  top: 0;
+  position: absolute;
+  height: 60px;
+}
+
+.window-right {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #cfe2f3;
+  border: 4px solid #a0c5e6;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(420px, 40px);
+}
+
+.window-left {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #cfe2f3;
+  border: 4px solid #a0c5e6;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(60px, 46px);
+}
+
+.window-left-close {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #cfe2f3;
+  border: 4px solid #a0c5e6;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(60px, 46px);
+}
+
+.window-right-close {
+  position: absolute;
+  height: 130px;
+  width: 130px;
+  background-color: #cfe2f3;
+  border: 4px solid #a0c5e6;
+  border-radius: 50%;
+  top: 0;
+  transform: translate(420px, 40px);
+}
+
+.door {
+  transform: translate(230px, 140px);
+  background-color: #e79326;
+  width: 150px;
+  top: 0;
+  position: absolute;
+  height: 290px;
+}
+
+.door .handle {
+  position: absolute;
+  background-color: dimgray;
+  width: 50px;
+  height: 10px;
+  transform: translate(10px, 30px);
+}
+
+.door .sign {
+  background-color: #fff;
+  width: 110px;
+  height: 40px;
+  position: relative;
+  transform: translate(19px, 70px);
+}
+
+.mailbox {
+  transform: translate(440px, 280px);
+  background-color: #999999;
+  width: 120px;
+  top: 0;
+  position: absolute;
+  height: 110px;
+}
+
+.mailbox .swing {
+  background-color: dimgray;
+  width: 100px;
+  height: 10px;
+  position: relative;
+  transform: translate(10px, 10px);
+}
+
+.mailbox:active {
+  transform: translate(440px, 350px);
+  background-color: #999999;
+  width: 120px;
+  /* border: 4px solid gray; */
+  top: 0;
+  position: absolute;
+  height: 110px;
+}
+
+.window-left:hover {
+  background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.window-right:hover {
+  background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  border: none;
+}
+
+@media (max-width: 1024px) {
+  .surrounding {
+    position: relative;
+  }
+
+  .sun {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: gold;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(775px, 19px);
+    margin-top: 2%;
+  }
+
+  .moon {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(775px, 19px);
+    margin-top: 2%;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .building-top {
+    /* position: absolute; */
+    transform: translate(170px, 250px);
+    position: absolute;
+    display: flex;
+    width: 10%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    margin: auto;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 110px solid #dd7e6b;
+  }
+
+  .building-wall {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 600px;
+    background-color: #cccccc;
+    margin: auto;
+    transform: translate(170px, 405px);
+  }
+
+  .signboard {
+    transform: translate(189px, -22px);
+    background-color: mediumspringgreen;
+    width: 250px;
+    border: 4px solid green;
+    top: 0;
+    position: absolute;
+    height: 60px;
+  }
+
+  .window-right {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(420px, 40px);
+  }
+
+  .window-left {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(60px, 46px);
+  }
+
+  .window-left-close {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(60px, 46px);
+  }
+
+  .window-right-close {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(420px, 40px);
+  }
+
+  .door {
+    transform: translate(230px, 140px);
+    background-color: #e79326;
+    width: 150px;
+    top: 0;
+    position: absolute;
+    height: 290px;
+  }
+
+  .door .handle {
+    position: absolute;
+    background-color: dimgray;
+    width: 50px;
+    height: 10px;
+    transform: translate(10px, 30px);
+  }
+
+  .door .sign {
+    background-color: #fff;
+    width: 110px;
+    height: 40px;
+    position: relative;
+    transform: translate(19px, 70px);
+  }
+
+  .mailbox {
+    transform: translate(440px, 280px);
+    background-color: #999999;
+    width: 120px;
+    top: 0;
+    position: absolute;
+    height: 110px;
+  }
+
+  .mailbox .swing {
+    background-color: dimgray;
+    width: 100px;
+    height: 10px;
+    position: relative;
+    transform: translate(10px, 10px);
+  }
+
+  .mailbox:active {
+    transform: translate(440px, 350px);
+    background-color: #999999;
+    width: 120px;
+    /* border: 4px solid gray; */
+    top: 0;
+    position: absolute;
+    height: 110px;
+  }
+
+  .window-left:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .window-right:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .surrounding {
+    position: relative;
+  }
+
+  .sun {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: gold;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(555px, 19px);
+    margin-top: 2%;
+  }
+
+  .moon {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(555px, 19px);
+    margin-top: 2%;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  .building-top {
+    /* position: absolute; */
+    transform: translate(40px, 250px);
+    position: absolute;
+    display: flex;
+    width: 10%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5%;
+    margin: auto;
+    border-left: 300px solid transparent;
+    border-right: 300px solid transparent;
+    border-bottom: 110px solid #dd7e6b;
+  }
+
+  .building-wall {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 430px;
+    width: 600px;
+    background-color: #cccccc;
+    margin: auto;
+    transform: translate(41px, 394px);
+  }
+
+  .signboard {
+    transform: translate(189px, -22px);
+    background-color: mediumspringgreen;
+    width: 250px;
+    border: 4px solid green;
+    top: 0;
+    position: absolute;
+    height: 60px;
+  }
+
+  .window-right {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(420px, 40px);
+  }
+
+  .window-left {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(60px, 46px);
+  }
+
+  .window-left-close {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(60px, 46px);
+  }
+
+  .window-right-close {
+    position: absolute;
+    height: 130px;
+    width: 130px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(420px, 40px);
+  }
+
+  .door {
+    transform: translate(230px, 140px);
+    background-color: #e79326;
+    width: 150px;
+    top: 0;
+    position: absolute;
+    height: 290px;
+  }
+
+  .door .handle {
+    position: absolute;
+    background-color: dimgray;
+    width: 50px;
+    height: 10px;
+    transform: translate(10px, 30px);
+  }
+
+  .door .sign {
+    background-color: #fff;
+    width: 110px;
+    height: 40px;
+    position: relative;
+    transform: translate(19px, 70px);
+  }
+
+  .mailbox {
+    transform: translate(440px, 280px);
+    background-color: #999999;
+    width: 120px;
+    top: 0;
+    position: absolute;
+    height: 110px;
+  }
+
+  .mailbox .swing {
+    background-color: dimgray;
+    width: 100px;
+    height: 10px;
+    position: relative;
+    transform: translate(10px, 10px);
+  }
+
+  .mailbox:active {
+    transform: translate(440px, 350px);
+    background-color: #999999;
+    width: 120px;
+    /* border: 4px solid gray; */
+    top: 0;
+    position: absolute;
+    height: 110px;
+  }
+
+  .window-left:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .window-right:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 480px) {
+  .surrounding {
+    position: relative;
+  }
+
+  .sun {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: gold;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(245px, 19px);
+  }
+
+  .moon {
+    position: absolute;
+    height: 90px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(245px, 19px);
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .building-top {
+    position: absolute;
+    transform: translate(40px, 90px);
+    position: absolute;
+    display: flex;
+    width: 10%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 5%; */
+    margin: auto;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 110px solid #dd7e6b;
+  }
+
+  .building-wall {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: #cccccc;
+    margin: auto;
+    transform: translate(41px, 216px);
+  }
+
+  .signboard {
+    transform: translate(48px, -22px);
+    background-color: mediumspringgreen;
+    width: 200px;
+    border: 4px solid green;
+    top: 0;
+    position: absolute;
+    height: 40px;
+  }
+
+  .window-right {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(220px, 30px);
+  }
+
+  .window-left {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(30px, 30px);
+  }
+
+  .window-left-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(30px, 30px);
+  }
+
+  .window-right-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(220px, 30px);
+  }
+
+  .door {
+    transform: translate(99px, 70px);
+    background-color: #e79326;
+    width: 100px;
+    top: 0;
+    position: absolute;
+    height: 130px;
+  }
+
+  .door .handle {
+    position: absolute;
+    background-color: dimgray;
+    width: 30px;
+    height: 5px;
+    transform: translate(10%, 4%);
+  }
+
+  .door .sign {
+    background-color: #fff;
+    width: 55px;
+    height: 20px;
+    position: relative;
+    transform: translate(19px, 30px);
+  }
+
+  .mailbox {
+    transform: translate(220px, 120px);
+    background-color: #999999;
+    width: 60px;
+    top: 0;
+    position: absolute;
+    height: 50px;
+  }
+
+  .mailbox .swing {
+    background-color: dimgray;
+    width: 40px;
+    height: 5px;
+    position: relative;
+    transform: translate(10px, 10px);
+  }
+
+  .mailbox:active {
+    transform: translate(220px, 160px);
+    background-color: #999999;
+    width: 60px;
+    top: 0;
+    position: absolute;
+    height: 50px;
+  }
+
+  .window-left:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .window-right:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .surrounding {
+    position: relative;
+  }
+
+  .sun {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: gold;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(234px, 19px);
+  }
+
+  .moon {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    border: none;
+    top: 0;
+    transform: translate(234px, 19px);
+  }
+
+  p {
+    font-size: 15px;
+  }
+
+  .building-top {
+    position: absolute;
+    transform: translate(1px, 90px);
+    position: absolute;
+    display: flex;
+    width: 10%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 5%; */
+    margin: auto;
+    border-left: 150px solid transparent;
+    border-right: 150px solid transparent;
+    border-bottom: 110px solid #dd7e6b;
+  }
+
+  .building-wall {
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 300px;
+    background-color: #cccccc;
+    margin: auto;
+    transform: translate(1px, 214px);
+  }
+
+  .signboard {
+    transform: translate(48px, -22px);
+    background-color: mediumspringgreen;
+    width: 200px;
+    border: 4px solid green;
+    top: 0;
+    position: absolute;
+    height: 40px;
+  }
+
+  .window-right {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(220px, 30px);
+  }
+
+  .window-left {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(30px, 30px);
+  }
+
+  .window-left-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(30px, 30px);
+  }
+
+  .window-right-close {
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    background-color: #cfe2f3;
+    border: 4px solid #a0c5e6;
+    border-radius: 50%;
+    top: 0;
+    transform: translate(220px, 30px);
+  }
+
+  .door {
+    transform: translate(99px, 70px);
+    background-color: #e79326;
+    width: 100px;
+    top: 0;
+    position: absolute;
+    height: 130px;
+  }
+
+  .door .handle {
+    position: absolute;
+    background-color: dimgray;
+    width: 30px;
+    height: 5px;
+    transform: translate(10%, 4%);
+  }
+
+  .door .sign {
+    background-color: #fff;
+    width: 55px;
+    height: 20px;
+    position: relative;
+    transform: translate(19px, 30px);
+  }
+
+  .mailbox {
+    transform: translate(220px, 120px);
+    background-color: #999999;
+    width: 60px;
+    top: 0;
+    position: absolute;
+    height: 50px;
+  }
+
+  .mailbox .swing {
+    background-color: dimgray;
+    width: 40px;
+    height: 5px;
+    position: relative;
+    transform: translate(10px, 10px);
+  }
+
+  .mailbox:active {
+    transform: translate(220px, 160px);
+    background-color: #999999;
+    width: 60px;
+    top: 0;
+    position: absolute;
+    height: 50px;
+  }
+
+  .window-left:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .window-right:hover {
+    background-image: url('https://icon2.cleanpng.com/20180202/pqe/kisspng-chocolate-chip-cookie-cookie-dough-clip-art-cookies-png-free-download-5a749f4a209440.8953913915175923941335.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
